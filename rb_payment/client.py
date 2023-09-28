@@ -33,4 +33,7 @@ class PaymentHelper:
         )
 
         # decode the responce
-        return JWT.decode(responce.json()["data"], jwt_key)
+        decode_response, data = JWT.decode(responce.json()["data"], jwt_key)
+
+        # todo handle error
+        return data
