@@ -28,7 +28,7 @@ code for getting payment url
 >)
 >
 >print(response_data)
->>reponse
+>>response
 >>
 >>{
 >>    "payment_link": "payment-link",
