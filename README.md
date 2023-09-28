@@ -13,4 +13,4 @@ pip install git+ssh://git@gitlab.renewbuy.in/consulting/rb-payment-client.git
 >
 >os.environ["RB_PAYMENT_JWT_KEY"] = "your_jwt_key"
 >
->os.environ["RB_PAYMENT_ENV_TYPE"] = "DEV"
+>os.environ["RB_PAYMENT_ENV_TYPE"] = "DEV" # PROD in case of production
