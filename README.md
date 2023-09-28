@@ -3,7 +3,8 @@
 
 ## Getting started
 
-***1. pip install git+ssh://git@gitlab.renewbuy.in/consulting/rb-payment-client.git***
+***1. Install the lib***
+>pip install git+ssh://git@gitlab.renewbuy.in/consulting/rb-payment-client.git
 
 ***2. Set the enviouments variables***
 >import os
