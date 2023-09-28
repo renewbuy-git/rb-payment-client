@@ -3,9 +3,9 @@
 
 ## Getting started
 
-pip install git+ssh://git@gitlab.renewbuy.in/consulting/rb-payment-client.git
+***1. pip install git+ssh://git@gitlab.renewbuy.in/consulting/rb-payment-client.git***
 
-***Set the enviouments variables***
+***2. Set the enviouments variables***
 >import os
 >
 >os.environ["RB_PAYMENT_SECRET_KEY"] = "your_secret_key"
