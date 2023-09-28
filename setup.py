@@ -1,10 +1,10 @@
 from setuptools import setup
 
-setup(name='py_qbee_tst',
+setup(name='rb-payment',
     version='0.1',
-    description='test package to run on qbee.io',
-    author='qbee AS',
-    author_email='author@somemail.com',
+    description='a client lib for rb payment',
+    author='Aman Srivastav',
+    author_email='aman.srivastava@renewbuy.com',
     license='MIT',
     packages=['rb_payment'],
     # scripts=['bin/payment_tests.py'],
