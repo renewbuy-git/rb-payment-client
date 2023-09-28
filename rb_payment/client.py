@@ -18,6 +18,7 @@ class PaymentHelper:
             "order_id": order_id,
             "amount": amount,
         }
+        # encode the dict data
         encoded_jwt_data = {"data":JWT.encode(dict_data, jwt_key)}
 
         header = {
@@ -31,4 +32,5 @@ class PaymentHelper:
             headers = header
         )
 
-        return responce.json()
+        # decode the responce
+        return JWT.decode(responce.json()["data"], jwt_key)
