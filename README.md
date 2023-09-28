@@ -18,6 +18,7 @@
 >os.environ["RB_PAYMENT_ENV_TYPE"] = "DEV" # PROD in case of production
 
 ***3. Code***
+
 code for getting payment url 
 >from rb_payment.client import PaymentHelper
 >
