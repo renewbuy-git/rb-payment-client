@@ -28,9 +28,9 @@ code for getting payment url
 >)
 >
 >print(response_data)
-
-reponse
->{
->    "payment_link": "payment-link",
->    "id: "payment identifier id"
->}
+>>reponse
+>>
+>>{
+>>    "payment_link": "payment-link",
+>>    "id: "payment identifier id"
+>>}
