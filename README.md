@@ -34,3 +34,22 @@ code for getting payment url
 >>    "payment_link": "payment-link",
 >>    "id: "payment identifier id"
 >>}
+
+***4. create a callback url to get callback response***
+call back url code example
+
+>from rb_payment import JWT
+>@action(methods=['POST'], detail=False,)
+>    def payment_callback(self, request):
+>        encrypted_data = request.data["data"]
+>        decode_status, data = JWT.decode(encrypted_data, os.environ.get("RB_PAYMENT_JWT_KEY"))
+>        order= PaymentOrder.objects.get(id=data["order_id"])
+>        status = data["status"].lower()
+>        order.status = STATUS_MAPPING[status]
+>        order.save()
+
+>        # manage redirection 
+>        if order.status == OrderStatusChoicess.SUCCESS:
+>            return redirect(contants.RET_SUCCESS)
+>        else:
+>            return redirect(contants.RET_FAIL)
